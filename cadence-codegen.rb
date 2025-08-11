@@ -5,20 +5,20 @@
 class CadenceCodegen < Formula
   desc "A tool for analyzing Cadence smart contracts and generating code"
   homepage "https://github.com/outblock/cadence-codegen"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Outblock/cadence-codegen/releases/download/v0.0.5/cadence-codegen_Darwin_x86_64.tar.gz"
-      sha256 "93061c685f2d98f768a53a4421d158ed8841ae86eb4b3fa7b67f5cfb87a753fd"
+      url "https://github.com/Outblock/cadence-codegen/releases/download/v0.0.6/cadence-codegen_Darwin_x86_64.tar.gz"
+      sha256 "f2d419cdbafbd575afa51cb282a4b36fd63db1328010c4eede4abcdeb15e29f3"
 
       def install
         bin.install "cadence-codegen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Outblock/cadence-codegen/releases/download/v0.0.5/cadence-codegen_Darwin_arm64.tar.gz"
-      sha256 "c9a4faef51101084470b6ad7874702916a1834216faccd840325f70912f3108a"
+      url "https://github.com/Outblock/cadence-codegen/releases/download/v0.0.6/cadence-codegen_Darwin_arm64.tar.gz"
+      sha256 "7e0884294707698dcca8e9392703e7e6c02b771cd7bc164b200995dc92bf895e"
 
       def install
         bin.install "cadence-codegen"
@@ -29,8 +29,8 @@ class CadenceCodegen < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Outblock/cadence-codegen/releases/download/v0.0.5/cadence-codegen_Linux_x86_64.tar.gz"
-        sha256 "d33293374ea68f704f1e887bc7d86ae581a45e07cd7fdcdcfae35f908d43d537"
+        url "https://github.com/Outblock/cadence-codegen/releases/download/v0.0.6/cadence-codegen_Linux_x86_64.tar.gz"
+        sha256 "9f19af0938cac4df01fe1b248acb7dfc1dbeabd9f338138722443b9af1796173"
 
         def install
           bin.install "cadence-codegen"
@@ -39,8 +39,8 @@ class CadenceCodegen < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Outblock/cadence-codegen/releases/download/v0.0.5/cadence-codegen_Linux_arm64.tar.gz"
-        sha256 "f466eecf4a436d1630f51591a2fc296dbc74b6d78cf07ae6aa02d6d6ded294f3"
+        url "https://github.com/Outblock/cadence-codegen/releases/download/v0.0.6/cadence-codegen_Linux_arm64.tar.gz"
+        sha256 "912fa89c22b327156b85a785cf4f2b47fdafd669d909fe4cf353645b8d6f2bc7"
 
         def install
           bin.install "cadence-codegen"
