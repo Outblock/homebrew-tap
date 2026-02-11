@@ -9,16 +9,16 @@ class CadenceCodegen < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Outblock/cadence-codegen/releases/download/1.0.0/cadence-codegen_Darwin_x86_64.tar.gz"
-      sha256 "93ceca7b9146dca484fb1ae7fb7d0691d0858db823da0408313ad53546ee019c"
+      url "https://github.com/Outblock/cadence-codegen/releases/download/v1.0.0/cadence-codegen_Darwin_x86_64.tar.gz"
+      sha256 "42c5c9b3d230b6c1b86b788d99ae0e65cebcd8f529992b7f4761be4d520ea2a7"
 
       def install
         bin.install "cadence-codegen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Outblock/cadence-codegen/releases/download/1.0.0/cadence-codegen_Darwin_arm64.tar.gz"
-      sha256 "e6ff47bf142dda73df08c0c1ce2e811cbf5cbc4a5fdadc05b70ebc5bbbd4714b"
+      url "https://github.com/Outblock/cadence-codegen/releases/download/v1.0.0/cadence-codegen_Darwin_arm64.tar.gz"
+      sha256 "928e124cc167877436ed59193cd5d0e72fdc816751de13ee91311fcb3cf13df8"
 
       def install
         bin.install "cadence-codegen"
@@ -28,15 +28,15 @@ class CadenceCodegen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Outblock/cadence-codegen/releases/download/1.0.0/cadence-codegen_Linux_x86_64.tar.gz"
-      sha256 "4703253f9f0afd64fbe764aea8537def9d7fd7b3994fd0795fa186aefff7c1d0"
+      url "https://github.com/Outblock/cadence-codegen/releases/download/v1.0.0/cadence-codegen_Linux_x86_64.tar.gz"
+      sha256 "8a3c262296df773cc7e2e9117ccfc84a97b5df30f253834392571cef76fde2f8"
       def install
         bin.install "cadence-codegen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Outblock/cadence-codegen/releases/download/1.0.0/cadence-codegen_Linux_arm64.tar.gz"
-      sha256 "7b2a594f1395f731d5313dce725568f7ca750407883e4b1d0107f026b269fca5"
+      url "https://github.com/Outblock/cadence-codegen/releases/download/v1.0.0/cadence-codegen_Linux_arm64.tar.gz"
+      sha256 "d80e5008b79fa3f6306c37dad894661c284a13e307cbdc37c3f636c12e0b7747"
       def install
         bin.install "cadence-codegen"
       end
